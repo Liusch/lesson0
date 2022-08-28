@@ -15,7 +15,8 @@ print('Если поставить \\t то \t будет отступ (табу
 print(f'{stroka}{chislo}" можно и так без преобразования в str')
 '''
 
-number = input('Введите число от 1 до 5: ')
+
+number = int(input('Я загадал число. Введите число от 1 до 5: '))
 print(f'Вы ввели число - {number}')
 
 #Подключение модуля random
@@ -25,6 +26,8 @@ numberAI = random.randint(1,5)
 
 print(f'а число загаданное компьютером: {numberAI}')
 
-if (number == numberAI):
-    print('победа')
+if number == numberAI:
+    print('Победа Вы угадали')
+else:
+    print('Вы не угадали')
 
